@@ -1,0 +1,283 @@
+/*-- Body Reset --*/
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*=== LANDING GRADIENT ===*/
+.landing{
+  text-transform: uppercase;
+  font-weight: 200;
+  text-shadow: 0.05rem 0.05rem 0.05rem rgba(0,0,0,0.15);
+  background-image: linear-gradient(90deg,#1DA1F2,#981ceb);
+}
+
+
+
+/*=== HEADINGS & ICONS ===*/
+h4{
+  font-size: 1.6rem;
+  padding-top: 7rem;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+h1{
+  font-size: 3rem;
+  padding: 1.8rem 0;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+.home{
+  padding-bottom: 7rem;
+}
+.fa-stack{
+  font-size: 2.3rem;
+}
+.fa-stack-2x{
+  opacity: 0.15;
+}
+.fa-stack-1x{
+  opacity: 0.7;
+}
+.fa-globe-asia{
+  opacity: 1;
+}
+
+
+
+/*=== NAVIGATION ===*/
+.navbar{
+  background-image: linear-gradient(90deg,#1DA1F2,#981ceb);
+  padding: 0.3rem 0 0.6rem ;
+  box-shadow: 0 1rem 1rem rgba(0,0,0,0.15);
+}
+.navbar-brand img{
+  height: 3rem;
+  padding: .2rem;
+}
+.nav-link{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .12rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin-right: .8rem;
+  text-shadow: 0.05rem 0.05rem 0.05rem rgba(0,0,0,0.15);
+
+}
+.fa-bars{
+  color: white;
+}
+.nav-link.active,
+.nav-link:hover{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .12rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin-right: .8rem;
+  
+  border-bottom: 0.05rem solid;
+}
+
+
+/*=== CONTENT STYLE ===*/
+h3{
+  font-weight: 300;
+}
+.lead{
+  font-weight: lighter!;
+}
+a.btn-outline-dark{
+  font-size: small!important;
+}
+a.btn-outline-dark:hover{
+
+  color: white!important;
+  background-color: gray!important;
+  font-size: small!important;
+  border-color: gray!important;
+
+}
+
+
+/*=== FIXED BACKGROUND IMG ===*/
+.fixed-background{
+  padding: 12rem 0;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.25);
+
+}
+.fixed{
+  background-image: url('../img/macbook.jpg');
+  
+}
+
+
+
+/*=== FOOTER ===*/
+footer{
+  background-image: linear-gradient(90deg,#1DA1F2,#981ceb);
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+hr.light{
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+footer a{
+  color: #d5d5d5;
+}
+hr.light-100{
+  width: 100%;
+  border-top: 1px solid #d5d5d5;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+#logo{
+  width: 50%;
+  padding-top: 2rem;
+}
+#para{
+  padding-top: 1.2rem;
+  font-size:1.2rem;
+  padding-left: .5rem;
+
+}
+
+
+
+/*=== SOCKET ===*/
+
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"MEDIA QUERIES"<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>>>>>>>>>>>>>>>>Large Devices */
+@media(min-width:1200px){
+    
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>Medium Devices */
+@media(min-width:992px) and (max-width:1199px){
+  h1{
+    font-size: 2.6rem;
+  }  
+  .fa-stack.fa-2x{
+    font-size: 2rem;
+  }
+  .fixed-background{
+    padding: 9rem 0;
+  }
+
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>Small Devices */
+@media(min-width:768px) and (max-width:991px) {
+  h1{
+    font-size: 2rem;
+  }  
+  .fa-stack.fa-2x{
+    font-size: 1.7rem;
+  }
+  .fixed-background{
+    padding: 7rem 0;
+  }
+
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>Extra Small Devices */
+@media(min-width:576px) and (max-width:767px){
+
+
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>Extra-Extra Small Devices */
+@media(max-width:575px) {
+
+}
+
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+margin-left: 0px!important;
+margin-right: 0px!important;
+}
+
+/*--- Fix for Fixed Navbar jumping on scroll --*/
+.fixed-top  {
+ -webkit-backface-visibility: hidden;
+ 
+}
+
+/*--- Fixed Landing Page Section --*/
+.landing {
+  position: relative;
+  width: 100%;
+  /* height: 100vh; */
+  display: table;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+/*--- iOS Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999!important;
+}
+.fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
